@@ -42,14 +42,14 @@ const Login = () => {
         <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
-            <label className="block mb-1 font-semibold flex">Email<p className="text-red-600 dark:text-red-500">*</p></label>
+            <label className="block mb-1 font-semibold flex">Email<p className="text-red-600">*</p></label>
             <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p className="text-sm text-red-600 dark:text-red-500 mt-2">* Campo Obrigatório</p>
+            <p className="text-sm text-red-600 mt-2">* Campo Obrigatório</p>
           </div>
           <div>
-            <label className="block mb-1 font-semibold flex">Senha<p className="text-red-600 dark:text-red-500">*</p></label>
+            <label className="block mb-1 font-semibold flex">Senha<p className="text-red-600">*</p></label>
             <input type="password" placeholder="Senha" value={senha} onChange={(e) => setSenha(e.target.value)} required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p className="text-sm text-red-600 dark:text-red-500 mt-2">* Campo Obrigatório</p>
+            <p className="text-sm text-red-600 mt-2">* Campo Obrigatório</p>
           </div>
           <p className="mt-4 text-gray-600 text-sm dark:text-gray-300">Esqueceu a senha?{" "}
           <a href="/redefinir_senha" className="text-blue-600 hover:underline">Redefinir</a>
